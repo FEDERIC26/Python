@@ -2,7 +2,7 @@
 
 import requests
 from bs4 import BeautifulSoup
-import csv
+import pandas as pd
 
 class Scraper:
     def __init__(self, url_base):
@@ -26,11 +26,9 @@ class Scraper:
             return False
 
     def sauvegarder(self):
-        with open("livres.csv", "w", newline="", encoding="utf-8") as f:
-            writer = csv.writer(f)
-            writer.writerow(["Titre", "Prix"])
-            writer.writerows(self.livres)
-        print(f"{len(self.livres)} livres sauvegardés ✓")
+        df = pd.DataFrame(self.livres, columns=["Titre", "Prix"])
+        df.to_excel("livres.xlsx", index=False)
+        print(f"{len(self.livres)} livres sauvegardés dans livres.xlsx ✓")
 
     def lancer(self):
         page = 1
@@ -40,6 +38,5 @@ class Scraper:
             page += 1
         self.sauvegarder()
 
-# Lancer le scraper
 scraper = Scraper("https://books.toscrape.com/catalogue/page-{}.html")
 scraper.lancer()
