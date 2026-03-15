@@ -2,6 +2,26 @@
 
 Je transforme vos taches manuelles en scripts Python qui tournent en quelques secondes.
 
+## Structure du repo
+
+```
+Python-projets/
+├── automatisation-excel/
+│   ├── Automation_excel.py
+│   ├── offres_python.xlsx
+│   ├── plombier_Paris.xlsx
+│   └── rapport.xlsx
+├── web-scraping/
+│   ├── Scraper.py
+│   ├── livres.csv
+│   └── livres.xlsx
+└── exercices/
+    ├── #1-Le Pris Mystere.py
+    ├── #2-Jeu de Pierre,Feuilles,Ciseaux.py
+    ├── #3-Le jeu du Pendu.py
+    └── #4-Generateur de QR Code.py
+```
+
 ## Projets
 
 ### 1. Automatisation de rapports Excel
