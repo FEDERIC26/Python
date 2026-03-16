@@ -1,0 +1,5 @@
+.vscode/
+*.xlsx
+tempCodeRunnerFile.*
+__pycache__/
+*.pyc
