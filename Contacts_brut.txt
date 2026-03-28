@@ -1,0 +1,8 @@
+# Contacts_brut.txt
+
+Salut, contacte moi à jean.dupont@gmail.com ou au 06 12 34 56 78.
+Le bureau est joignable à contact@entreprise.fr, 01-23-45-67-89.
+Marie: marie_92@hotmail.com / 0678901234
+Duplicata: jean.dupont@gmail.com
+N'importe quoi blabla pas d'email ici.
+Support technique: support@entreprise.fr (0145678900)
